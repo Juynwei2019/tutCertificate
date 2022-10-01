@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>機米塔學證書產生器</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<div id="app" >
+	<div class="w3-container w3-center ">
+		<h1 class="w3-text-blue">機米塔學證書產生器</h1>
+	
+		<div class="w3-container w3-center">
+		  <canvas id="canvas" style="width:80%" ></canvas>
+		</div>		
+		<h2 style="font-size:50px;" class="w3-text-blue"><b>請輸入名字:</b></h2>
+		<input style="font-size:50px;" class="w3-input w3-border" type="text" v-model="title">
+		<button style="font-size:50px;" class="w3-button w3-block w3-teal" style="width:100%" v-on:click="toIMG">下載</button>
+    </div>
+</div>
+<script src="script/main.js"></script>
+</body>
+</html>
